@@ -28,7 +28,7 @@ const projectsData = [
     id:3,
     title: "PCOS Prediction",
     description: "P3 desc",
-    image: "/images/projects/PCOS.png",
+    image: "/images/projects/PCOS.jpeg",
     tag: ["All", "ML"],
     gitUrl: "/",
     previewUrl: "/"
