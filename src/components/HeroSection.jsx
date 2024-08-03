@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className='grid grid-cols-1 sm:grid-cols-12'>
         <div className='col-span-7 place-self-center text-center sm:text-left'>
            <h1 className ='text-white mb-4 text-4l sm:text-5xl lg:text-6xl font-extrabold'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-600'>Hello, Im {" "} </span>
+              <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-600'>Hello, I&apos;m {" "} </span>
               <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
@@ -26,7 +26,8 @@ const HeroSection = () => {
     />
            </h1>
            <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-              A frontend developer
+           A showcase of technical proficiencies and creative problem-solving through projects, experiences, and skills. 
+
            </p>
            <div>
             <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-600 via-orange-600 hover:bg-slate-300 text-white'>
