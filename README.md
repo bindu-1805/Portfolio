@@ -20,10 +20,7 @@ This is my portfolio website built using NextJS and TailwindCSS.
    ```
    npm run dev
    ```
-5. Open your browser to see the result. <br />
-   `
-   http://localhost:3000
-   `
+5. Open your browser to see the result `http://localhost:3000` <br />
 6. You can start editing the page by modifying `app/page.js`.
 
 
