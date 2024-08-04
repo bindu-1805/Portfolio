@@ -6,7 +6,7 @@ function ContactMe() {
     <section className="mt-15">
       <h2 className="text-center text-4xl font-bold text-white mt-8 mb-4 md:mb-9"id='contact' >Contact Me</h2>
       <p className='text-center text-xl text-white mb-5 '>If you love coding as much as I do, feel free to ping me. 
-      Do check out my social links as well :)</p>
+      Check out my social links as well :)</p>
 
       <div className="text-white flex flex-row justify-center items-center gap-5 ">
       
