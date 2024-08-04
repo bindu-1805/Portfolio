@@ -4,8 +4,12 @@ import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter} from 'react-icons/fa';
 function ContactMe() {
   return (
     <section className="mt-15">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-12"id='contact' >Contact Me</h2>
-      <div className="text-white flex flex-row justify-center items-center gap-5 py-2">
+      <h2 className="text-center text-4xl font-bold text-white mt-8 mb-4 md:mb-9"id='contact' >Contact Me</h2>
+      <p className='text-center text-xl text-white mb-5 '>If you love coding as much as I do, feel free to ping me. 
+      Do check out my social links as well :)</p>
+
+      <div className="text-white flex flex-row justify-center items-center gap-5 ">
+      
         <div className="contact-item">
           <a href="mailto: bindu2003madhavi@gmail.com">
               <FaEnvelope className="icon h-5 w-5 " />

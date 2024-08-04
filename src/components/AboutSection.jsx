@@ -27,9 +27,9 @@ const TAB_DATA = [
        id: "education",
        content: (
         <ul className="list-disc pl-2">
-          <li>Global Academy of Technology [CGPA - 9.69]</li>
-          <li>MES Kishora Kendra PU College [98.5%]</li>
-          <li>Nirmala Rani High School [92.48%]</li>
+          <li>Global Academy of Technology <strong>[CGPA - 9.69]</strong></li>
+          <li>MES Kishora Kendra PU College <strong>[98.5%]</strong></li>
+          <li>Nirmala Rani High School <strong>[92.48%]</strong></li>
         </ul>
       )
     },
@@ -45,7 +45,22 @@ const TAB_DATA = [
            <li>Computer Networks and Internet Protocol, NPTEL</li>
          </ul>
        )
-     }
+     },
+
+     {
+      title: "Achievements",
+      id: "achievements",
+      content: (
+       <ul className="list-disc pl-2">
+         <li>Presented a paper titled, 
+            <strong> Efficient Battery Management Systems in Electric Vehicles using AI and IoT - A literature Survey</strong>
+         </li>
+         <li>Worked as a 
+         <strong> Summer Research Fellow at IIT Dharwad through the SRFP&apos;24 offered by IAS-INSA-NASI</strong>
+         </li>
+       </ul>
+     )
+   }
 ]
 
 const AboutSection = () => {
@@ -85,6 +100,12 @@ const AboutSection = () => {
            active = {tab === "coursework"} >
             {""}
             Course work {""}
+           </TabButton>
+           <TabButton 
+           selectTab={() => handleTabChange("achievements")} 
+           active = {tab === "achievements"} >
+            {""}
+            Achievements {""}
            </TabButton>
         </div>
         <div className="mt-8">{TAB_DATA.find((t) => t.id ===tab).content}</div>
