@@ -27,7 +27,7 @@ const projectsData = [
   {
     id:3,
     title: "PCOS Prediction",
-    description: "Computational algorithms are used for predicting PCOS.",
+    description: "Computational algorithms are used for predicting PCOS where Decision Tree Classifier outperformed all other classifiers.",
     image: "/images/projects/PCOS.jpeg",
     tag: ["All", "ML"],
     gitUrl: "https://github.com/bindu-1805/PCOS-detection",
@@ -47,7 +47,7 @@ const projectsData = [
   {
     id:5,
     title: "Portfolio",
-    description: "A simple portfolio website designed using NextJS",
+    description: "A simple portfolio website designed using NextJS and Tailwind CSS",
     image: "/images/projects/Portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bindu-1805/Portfolio",
@@ -66,8 +66,8 @@ const ProjectsSection = () => {
     );
 
     return (
-        <>
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8" id="projects">
+        <section id="projects">
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8" >
         My Projects
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -98,7 +98,7 @@ const ProjectsSection = () => {
           previewUrl={project.previewUrl} />
           )}
           </div>
-        </>
+        </section>
     )
 }
 

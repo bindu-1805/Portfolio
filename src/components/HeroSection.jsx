@@ -8,8 +8,8 @@ const HeroSection = () => {
     return (
         <section className="lg:py-16">
         <div className='grid grid-cols-1 sm:grid-cols-12'>
-        <div className='col-span-7 place-self-center text-center sm:text-left'>
-           <h1 className ='text-white mb-4 text-4l sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold'>
+        <div className='col-span-7 place-self-center text-center sm:text-left pt-20'>
+           <h1 className ='text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold'>
               <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-orange-600'>Hello, I&apos;m {" "} </span>
               <TypeAnimation
       sequence={[
@@ -19,7 +19,7 @@ const HeroSection = () => {
         'A Front-end developer',
         1000,
         'An ML Enthusiast',
-        1000
+        1000,
       ]}
       wrapper="span"
       speed={50}
@@ -51,7 +51,7 @@ const HeroSection = () => {
             <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
             <Image src='/images/profile.png' 
             alt='hero-img' 
-            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 '
+            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
             width={300} 
             height={300} 
 

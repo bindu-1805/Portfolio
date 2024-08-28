@@ -2,7 +2,7 @@
 import React, {useTransition, useState} from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-import { Content } from "next/font/google";
+//import { Content } from "next/font/google";
 
 const TAB_DATA = [
     {
@@ -19,7 +19,7 @@ const TAB_DATA = [
           <li>MongoDB</li>
           <li>Tailwind</li>
         </ul>
-      )
+      ),
     },
 
     {
@@ -31,7 +31,7 @@ const TAB_DATA = [
           <li>MES Kishora Kendra PU College <strong>[98.5%]</strong></li>
           <li>Nirmala Rani High School <strong>[92.48%]</strong></li>
         </ul>
-      )
+      ),
     },
 
     {
@@ -44,7 +44,7 @@ const TAB_DATA = [
            <li>The Complete 2024 Web Development Bootcamp - Udemy</li>
            <li>Computer Networks and Internet Protocol, NPTEL</li>
          </ul>
-       )
+       ),
      },
 
      {
@@ -59,9 +59,9 @@ const TAB_DATA = [
          <strong> Summer Research Fellow at IIT Dharwad through the SRFP&apos;24 offered by IAS-INSA-NASI</strong>
          </li>
        </ul>
-     )
-   }
-]
+     ),
+   },
+];
 
 const AboutSection = () => {
     const [tab, setTab] = useState("skills");
@@ -74,11 +74,11 @@ const AboutSection = () => {
         });
     };
 
-    return <section className="text-white">
+    return <section className="text-white" id="about">
     <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
     <Image src="/images/about-img.jpg" alt="about-image" width={1200} height={100} />
     <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-        <h2 className="text-4xl font-bold text-white mb-4" id="about">About Me</h2>
+        <h2 className="text-4xl font-bold text-white mb-4" >About Me</h2>
         <p className="text-base lg:text-lg">
         Leveraging React, Redux, and Tailwind, I design and build responsive UIs that are both visually appealing and functional!
         </p>
@@ -108,7 +108,9 @@ const AboutSection = () => {
             Achievements {""}
            </TabButton>
         </div>
-        <div className="mt-8">{TAB_DATA.find((t) => t.id ===tab).content}</div>
+        <div className="mt-8">
+        {TAB_DATA.find((t) => t.id ===tab).content}
+        </div>
     </div>
     </div>
     </section>;
