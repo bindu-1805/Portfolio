@@ -52,6 +52,26 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/bindu-1805/Portfolio",
     previewUrl: "https://github.com/bindu-1805/Portfolio"
+  },
+
+  {
+    id:6,
+    title: "Blog-app",
+    description: "Allows users to create and view posts. Posts won't persist between sessions as no database is used.",
+    image: "/images/projects/blog-app.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/bindu-1805/Blog-app",
+    previewUrl: "https://github.com/bindu-1805/Blog-app"
+  },
+
+  {
+    id:7,
+    title: "Cocktail-recipe-generator",
+    description: "Uses CocktailDB API to give a random cocktail recipe with a click of a button offering a cocktail name, category, glass type, ingredients and instructions!.",
+    image: "/images/projects/Cocktail.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/bindu-1805/Cocktail-recipe-generator",
+    previewUrl: "https://cocktail-recipe-generator.vercel.app/"
   }
 ]
 
