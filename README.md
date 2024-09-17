@@ -10,7 +10,7 @@ This is my portfolio website built using NextJS and TailwindCSS.
    ```
 2. Navigate to the project directory <br />
    ```
-   cd my_portfolio
+   cd Portfolio
    ```
 3. Install the dependencies <br />
    ```
