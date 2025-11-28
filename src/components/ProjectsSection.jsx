@@ -4,75 +4,77 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 
 const projectsData = [
+  
   {
     id:1,
-    title: "GistIt: An AI Text Summarizer",
-    description: "Allows users to paste or enter their long texts and summarizes them in a concise manner.",
-    image: "/images/projects/GistIt.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/bindu-1805/AI-Text-Summarizer-App",
-    previewUrl: "https://replit.com/@bindu2003madhav/GistIt-An-AI-Text-Summarizer"
-  },
-
-  {
-    id:2,
-    title: "Acme: NextJS Dashboard App",
-    description: "A simple dashboard app having a public home page, login page, dashboard pages that are protected by authentication and the ability for users to add, edit and delete invoices.",
-    image: "/images/projects/Acme.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/bindu-1805/nextJS",
-    previewUrl: "https://nextjs-dashboard-qjwdps8o7-bindu-madhavi-vs-projects.vercel.app/"
-  },
-
-  {
-    id:3,
-    title: "PCOS Prediction",
-    description: "Computational algorithms are used for predicting PCOS where Decision Tree Classifier outperformed all other classifiers.",
-    image: "/images/projects/PCOS.jpeg",
-    tag: ["All", "ML"],
-    gitUrl: "https://github.com/bindu-1805/PCOS-detection",
-    previewUrl: "https://github.com/bindu-1805/PCOS-detection"
-  },
-
-  {
-    id:4,
-    title: "Rainfall Prediction for next harvest year",
-    description: "ML techniques used - Random Forests, Ridge Regressor, K Neighbors Regressor",
-    image: "/images/projects/Rainfall.png",
-    tag: ["All", "ML"],
-    gitUrl: "https://github.com/ananyag3110/rainfall_prediction-for-next-harvest-year",
-    previewUrl: "https://github.com/ananyag3110/rainfall_prediction-for-next-harvest-year"
-  },
-
-  {
-    id:5,
     title: "Portfolio",
     description: "A simple portfolio website designed using NextJS and Tailwind CSS",
     image: "/images/projects/Portfolio.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/bindu-1805/Portfolio",
     previewUrl: "https://github.com/bindu-1805/Portfolio"
   },
 
   {
-    id:6,
+    id:2,
     title: "Blog-app",
     description: "Allows users to create and view posts. Posts won't persist between sessions as no database is used.",
     image: "/images/projects/blog-app.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/bindu-1805/Blog-app",
     previewUrl: "https://github.com/bindu-1805/Blog-app"
   },
 
   {
-    id:7,
+    id:3,
     title: "Cocktail-recipe-generator",
-    description: "Uses CocktailDB API to give a random cocktail recipe with a click of a button offering a cocktail name, category, glass type, ingredients and instructions!.",
+    description: "Uses CocktailDB API to give a random cocktail recipe with a click of a button offering a cocktail name, category, glass type, ingredients and instructions.",
     image: "/images/projects/Cocktail.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Frontend"],
     gitUrl: "https://github.com/bindu-1805/Cocktail-recipe-generator",
     previewUrl: "https://cocktail-recipe-generator.vercel.app/"
+  },
+
+  {
+    id:4,
+    title: "Keeper",
+    description: "Add and delete notes in a seamless way.",
+    image: "/images/projects/Keeper.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/bindu-1805/Keeper",
+    previewUrl: "https://keeper-nine-lovat.vercel.app/"
+  },
+
+  {
+    id:5,
+    title: "Globe-Hop",
+    description: "Unveil the world's vibrant tapestry with GlobeHop!",
+    image: "/images/projects/GlobeHop.png",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/bindu-1805/GlobeHop",
+    previewUrl: "https://bindu-1805.github.io/GlobeHop/"
+  },
+
+   {
+    id:6,
+    title: "Smart Health Analytics System",
+    description: "The Smart Health Analytics System is a full-stack database-driven application designed to improve healthcare data management and provide meaningful insights for doctors, and administrators.",
+    image: "/images/projects/SHAS.png",
+    tag: ["All", "Full stack"],
+    gitUrl: "https://github.com/bindu-1805/Smart-Health-Analytics-System",
+    previewUrl: "https://docs.google.com/presentation/d/1PpgORjIYpngSYn9feS2Gfz5HX6hLrarjYs6tEr-EDyg/edit?usp=sharing"
+  },
+
+  {
+    id:7,
+    title: "SyncSketch",
+    description: "A Real-time collaborative drawing app built using ReactJS, ExpressJS and NodeJS.",
+    image: "/images/projects/SyncSketch.png",
+    tag: ["All", "Full stack"],
+    gitUrl: "https://github.com/bindu-1805/SyncSketch-",
+    previewUrl: "https://github.com/bindu-1805/SyncSketch-/blob/master/G20_1GA21CS032%26040_2023-2024.pdf"
   }
+
 ]
 
 const ProjectsSection = () => {
@@ -98,13 +100,13 @@ const ProjectsSection = () => {
 
               <ProjectTag 
               onClick={handleTagChange} 
-              name="Web" 
-              isSelected={tag==="Web"} />
+              name="Frontend" 
+              isSelected={tag==="Frontend"} />
 
               <ProjectTag 
               onClick={handleTagChange} 
-              name="ML" 
-              isSelected={tag==="ML"} />
+              name="Full stack" 
+              isSelected={tag==="Full stack"} />
             
         </div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
