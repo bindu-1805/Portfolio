@@ -188,7 +188,7 @@ const AboutSection = () => {
    <div className="w-full flex flex-col gap-8 items-start py-8 px-4 sm:py-16">
     <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
         <h2 className="text-4xl font-bold text-white mb-4" >About Me</h2>
-        <p className="text-base lg:text-lg">
+        <p className="text-base sm:text-lg mb-6 lg:text-xl">
         Working as a Programmer Analyst Trainee at Cognizant Technology Solutions. Crafting Responsive UIs with React, Redux and Tailwind side by side.
         </p>
         <div className="flex flex-row justify-start mt-8 gap-2 flex-wrap">
