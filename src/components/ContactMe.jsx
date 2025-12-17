@@ -14,7 +14,7 @@ function ContactMe() {
           If you love coding as much as I do, ping me for collaborations or just to say hi.
         </p>
 
-        <div className="flex items-center justify-center gap-4 sm:gap-6">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 sm:flex-nowrap">
           <a
             href="https://www.linkedin.com/in/bindu-madhavi-v/"
             target="_blank"
